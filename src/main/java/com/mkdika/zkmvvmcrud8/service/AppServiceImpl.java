@@ -31,4 +31,15 @@ public class AppServiceImpl extends GenericServiceImpl implements AppService {
                 .list();
         return list;
     }
+
+    @Override
+    public List<TbPerson> searchTbPerson(String key) {
+        List<TbPerson> list = getCurrentSession().createQuery("FROM TbPerson a "
+                + "WHERE LOWER(a.firstname) LIKE LOWER(:key) "
+                + "OR LOWER(a.lastname) LIKE LOWER(:key) "
+                + "OR LOWER(a.email) LIKE LOWER(:key) ORDER BY a.firstname")
+                .setParameter("key", "%"+key+"%")
+                .list();
+        return list;
+    }
 }

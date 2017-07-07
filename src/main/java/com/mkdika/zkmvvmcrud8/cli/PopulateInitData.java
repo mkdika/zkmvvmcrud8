@@ -25,6 +25,9 @@ public class PopulateInitData {
     private static AppService svc;
 
     public static void main(String[] args) throws Exception {
+        
+        SpringConfig.WEB_MODE = false;
+        
         // Init the Spring Application Context
         initAppContext();
 

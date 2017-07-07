@@ -28,6 +28,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement(proxyTargetClass = true)
 public class SpringConfig {
 
+    public static boolean WEB_MODE = true;
+
     private static final String HIBERNATE_PACKAGES_TO_SCAN = "com.mkdika.zkmvvmcrud8.model";
 
     @Resource
@@ -35,15 +37,9 @@ public class SpringConfig {
 
     @Bean
     public DataSource getDataSource() {
-        // the support both web & desktop access of SQLite file.
-        String appAbsPath = new File("").getAbsolutePath();
-        String s = AppUtil.getOsPathSlashChar();
-        String dbUrl = "jdbc:sqlite:" + appAbsPath + s + "zkmvvmcrud8.db";
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>. " + dbUrl);
-
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(env.getRequiredProperty("db.driver"));
-        dataSource.setUrl(dbUrl);
+        dataSource.setUrl(getDbUrl());
         dataSource.setUsername(env.getRequiredProperty("db.username"));
         dataSource.setPassword(env.getRequiredProperty("db.password"));
         return dataSource;
@@ -70,5 +66,29 @@ public class SpringConfig {
     public HibernateTransactionManager getTransactionManager() {
         HibernateTransactionManager htm = new HibernateTransactionManager(getSessionFactory());
         return htm;
+    }
+
+    private String getDbUrl() {
+        if (WEB_MODE) {
+            return "jdbc:sqlite:" + this.getClass().getResource("/").getPath() + "zkmvvmcrud8.db";
+        } else {
+            String sl = AppUtil.getOsPathSlashChar();
+            StringBuilder str = new StringBuilder();
+            str.append("jdbc:sqlite:");
+            str.append(new File("").getAbsolutePath());
+            str.append(sl);
+            str.append("src");
+            str.append(sl);
+            str.append("main");
+            str.append(sl);
+            str.append("webapp");
+            str.append(sl);
+            str.append("WEB-INF");
+            str.append(sl);
+            str.append("classes");
+            str.append(sl);
+            str.append("zkmvvmcrud8.db");
+            return str.toString();
+        }
     }
 }

@@ -18,4 +18,5 @@ public interface AppService extends GenericService {
     
     // START custom service
     List<TbPerson> getTbPersonByGender(Integer gender);
+    List<TbPerson> searchTbPerson(String key);
 }

@@ -82,7 +82,12 @@
             <groupId>org.zkoss.zk</groupId>
             <artifactId>zkbind</artifactId>
             <version>${zk.version}</version>
-        </dependency>                 
+        </dependency> 
+        <dependency>
+            <groupId>org.zkoss.theme</groupId>
+            <artifactId>silvertail</artifactId>
+            <version>8.0.2.2</version>
+        </dependency>           
         <!--END - zk framework dependency-->
         
         <!-- START - SPRING FRAMEWORK -->

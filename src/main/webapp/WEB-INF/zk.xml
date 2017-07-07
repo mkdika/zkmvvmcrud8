@@ -24,9 +24,9 @@
     <!--choose preference buildin ZK themes-->
     <library-property>
         <name>org.zkoss.theme.preferred</name>
-        <value>breeze</value>        
+        <value>sapphire</value>        
     </library-property>
-    
+           
     <system-config>
         <max-upload-size>10240</max-upload-size>
     </system-config>

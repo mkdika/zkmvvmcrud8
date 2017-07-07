@@ -16,7 +16,7 @@
                     <p>
                          The resource you request is no longer available.<br/>
                          This is normally caused by timeout, or opening too many web pages.<br/>
-                         Please click <b><a href='/'>this Link</a></b> for redirect to Main Page.
+                         Please click <b><a href='/zkmvvmcrud8/'>this Link</a></b> for redirect to Main Page.
                     </p>
                 </div>
             </div>

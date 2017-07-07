@@ -9,24 +9,26 @@
             apply="org.zkoss.bind.BindComposer" 
             validationMessages="@id('vmsgs')" viewModel="@id('vm') @init('com.mkdika.zkmvvmcrud8.web.zk.component.BrowseData')" >            
         <caption id="caption" label="Zk MVVM CRUD 8 | Browse Data" style="margin: 0px 0px 0px 10px;vertical-align: middle;padding:0px 15px 0px 0px;font-weight: bold;font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif;color:#333;"/>
-        <custom-attributes org.zkoss.zul.listbox.rod="true"/>
+        <custom-attributes org.zkoss.zul.listbox.rod="false"/>
         <custom-attributes org.zkoss.zul.listbox.initRodSize="13"/>  
-        <listbox id="listboxData" width="100%"  mold="default" fixedLayout="true" height="100%" 
+        <textbox id="txtsearch" width="100%" placeholder="Please fill the search keyword and press ENTER"
+                onOK="@command('search',key=txtsearch.value)" height="30px"/>
+        <listbox id="listboxData" width="100%"  mold="default" fixedLayout="true" height="500px" 
                    model="@load(vm.persons)" 
-                 selectedItem="@bind(vm.personSelected)" onSelect="@command('listboxSelected',window=windowbrowse)">
+                 selectedItem="@bind(vm.personSelected)" onSelect="@command('listboxSelected',window=windowbrowse)" >
             <listhead sizable="true">                
                 <listheader label="Fist Name"  align="left" sort="auto" />
-                <listheader label="Last Name"  align="left" sort="auto" />                
-                <listheader label="Birthday" width="130px" align="center" sort="auto" />
-                <listheader label="Email" width="200px" align="left" sort="auto" />
+                <listheader label="Last Name"  align="left" sort="auto" />
+                <listheader label="Email" width="200px" align="left" sort="auto" />                
+                <listheader label="Birthday" width="130px" align="center" sort="auto" />                
                 <listheader label="Phone" width="200px" align="left" sort="auto" />                                                
             </listhead>
             <template name="model" var="item" status="s">
                 <listitem>
                     <listcell label="@load(item.firstname)"/>
                     <listcell label="@load(item.lastname)"/>                    
-                    <listcell label="@load(item.birthday) @converter('formatedDate', format='dd/MM/yyyy')"/>
                     <listcell label="@load(item.email)"/>
+                    <listcell label="@load(item.birthday) @converter('formatedDate', format='dd/MM/yyyy')"/>                    
                     <listcell label="@load(item.phonenumber)"/>                    
                 </listitem>
             </template>
