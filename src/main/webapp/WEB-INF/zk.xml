@@ -87,12 +87,5 @@
         <value>false</value>
     </library-property>
     
-    <disable-event-thread>false</disable-event-thread>
-    
-    <library-property>
-        <name>org.zkoss.bind.appConverters</name>
-        <value>
-            stringListConverter=com.mkdika.zkmvvmcrud8.web.zk.converter.StringListConverter            
-        </value>
-    </library-property>                
+    <disable-event-thread>false</disable-event-thread>                     
 </zk>

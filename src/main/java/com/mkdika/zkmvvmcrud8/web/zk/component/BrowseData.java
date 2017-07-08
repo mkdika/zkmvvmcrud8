@@ -2,9 +2,8 @@ package com.mkdika.zkmvvmcrud8.web.zk.component;
 
 
 import com.mkdika.zkmvvmcrud8.model.TbPerson;
-import com.mkdika.zkmvvmcrud8.web.zk.template.GenericFormVm;
+import com.mkdika.zkmvvmcrud8.web.zk.template.GenericVm;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import org.zkoss.bind.BindUtils;
 import org.zkoss.bind.annotation.BindingParam;
@@ -18,14 +17,14 @@ import org.zkoss.zul.Window;
  *
  * @author Maikel Chandika <mkdika@gmail.com>
  */
-public class BrowseData extends GenericFormVm {
+public class BrowseData extends GenericVm {
 
     private ListModelList<TbPerson> persons;
     private TbPerson personSelected;
 
     @Init
     public void init() throws Exception {
-        setPersons(new ListModelList<>(getService().findAll(TbPerson.class,"firstname desc")  ));
+        setPersons(new ListModelList<>(getService().findAll(TbPerson.class,"firstname")  ));
     }
 
     @Command
@@ -40,7 +39,7 @@ public class BrowseData extends GenericFormVm {
     
     @Command
     @SmartNotifyChange({"persons"})
-    public void search(@BindingParam("key") String key) {
+    public void search(@BindingParam("key") String key) {        
         setPersons(new ListModelList<>(getService().searchTbPerson(key)));
     }
 
