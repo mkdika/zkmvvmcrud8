@@ -8,8 +8,7 @@
     
     <window id="windowbrowse" border="normal" width="90%" height="500px"
             position="center" style="padding: 0px 3px 5px 3px;" closable="true" maximizable="false" minimizable="false"
-            mode="modal" shadow="false" sizable="true" onCancel="self.onClose();"
-            apply="org.zkoss.bind.BindComposer" 
+            mode="modal" shadow="false" sizable="true" onCancel="self.onClose();"            
             viewModel="@id('vm') @init('com.mkdika.zkmvvmcrud8.web.zk.component.BrowseData')" >           
         <caption id="caption" iconSclass="z-icon-search" label="Browse Data" style="margin: 0px 0px 0px 10px;vertical-align: middle;padding:0px 15px 0px 0px;font-weight: bold;font-size: 9pt; font-family: Verdana, Arial, Helvetica, sans-serif;color:#333;"/>
         <custom-attributes org.zkoss.zul.listbox.rod="false"/>
