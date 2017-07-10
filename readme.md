@@ -48,7 +48,7 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 
 
 ### Online Demo
-For online demo please visit this [__Site__](https://zkmvvmcrud8.herokuapp.com/){:target="_blank"}.
+For online demo please visit this [__Site__](https://zkmvvmcrud8.herokuapp.com/).
 
 
 ### Screenshots
@@ -62,8 +62,8 @@ For online demo please visit this [__Site__](https://zkmvvmcrud8.herokuapp.com/)
 
 
 ### Troubleshoot
-* Try to search with google or [stackOverFlow](https://stackoverflow.com/){:target="_blank"} first, most of your questions supposed to be asked by others.
+* Try to search with google or [stackOverFlow](https://stackoverflow.com/) first, most of your questions supposed to be asked by others.
 
 
 ### References
-* [Deploying Tomcat-based Java Web Applications with Webapp Runner on Heroku](https://devcenter.heroku.com/articles/java-webapp-runner){:target="_blank"}
+* [Deploying Tomcat-based Java Web Applications with Webapp Runner on Heroku](https://devcenter.heroku.com/articles/java-webapp-runner)
