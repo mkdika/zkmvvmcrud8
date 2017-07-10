@@ -6,7 +6,7 @@ ZK Framework version 8 MVVM Pattern. CRUD Transaction Proof of Concept Sample Pr
 
 This is the improved version with alternative pattern from previously [ZK MVVM CRUD](https://github.com/mkdika/zkmvvmcrud) sample project.
 
-### Technologies
+### Technologies 
 * __Java Platform:__
 	* [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html): JDK 8u121
 
