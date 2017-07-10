@@ -55,4 +55,4 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 
 
 ## Troubleshoot
-* Try to search with google or [stackOverFlow](https://stackoverflow.com/) first, most of you questions supposed to be have been asked by others ;)
+* Try to search with google or [stackOverFlow](https://stackoverflow.com/) first, most of your questions supposed to be asked by others.
