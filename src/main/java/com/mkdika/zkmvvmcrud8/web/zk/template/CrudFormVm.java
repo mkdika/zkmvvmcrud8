@@ -10,13 +10,13 @@ import org.zkoss.zk.ui.util.Clients;
  * @author Maikel Chandika <mkdika@gmail.com>
  */
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
-public class CrudFormVm extends GenericVm {   
+public abstract class CrudFormVm extends GenericVm {   
 
     private Boolean visibleAdd = false;    
     private Boolean visibleDelete = false;
     private Boolean visibleSave = false;
     private Boolean visibleCancel = false;   
-    private Boolean visibleSearch = true;    
+    private Boolean visibleBrowse = true;    
     private Boolean visibleInfo = true;
     
     public void init() {        
@@ -24,33 +24,17 @@ public class CrudFormVm extends GenericVm {
     }  
     
     // toolbar command    
-    public void addClick() {
-        addButtonState();
-    }
+    public abstract void addClick();   
 
-    public void editClick() {
-        editButtonState();
-    }
+    public abstract void deleteClick();
 
-    public void deleteClick() {
-        normalButtonState();
-    }
+    public abstract void saveClick();
 
-    public void saveClick() {
-        normalButtonState();
-    }
+    public abstract void cancelClick();
+    
+    public abstract void browseClick();
 
-    public void cancelClick() {
-        normalButtonState();
-    }
-
-    public void refreshClick() {
-
-    }
-
-    public void infoClick() {
-
-    }      
+    public abstract void infoClick();
 
     @DefaultCommand
     public void defaultCommand() {
@@ -100,7 +84,7 @@ public class CrudFormVm extends GenericVm {
     }
 
     public Boolean getVisibleSearch() {
-        return visibleSearch;
+        return visibleBrowse;
     }
 
     public Boolean getVisibleInfo() {
@@ -108,7 +92,7 @@ public class CrudFormVm extends GenericVm {
     }
     
     public void setVisibleSearch(boolean visibleSearch) {
-        this.visibleSearch = visibleSearch;        
+        this.visibleBrowse = visibleSearch;        
         BindUtils.postNotifyChange(null,null,this,"visibleSearch");
     }
    

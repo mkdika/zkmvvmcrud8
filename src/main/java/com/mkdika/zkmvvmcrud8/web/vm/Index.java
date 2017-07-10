@@ -56,9 +56,9 @@ public class Index extends CrudFormVm {
         initScrollBar(gridId);
     }
 
-    @Command
-    
-    public void delClick() {
+    @Command    
+    @Override
+    public void deleteClick() {
         msq("Zk MVVM CRUD 8","Delete Confirmation?", "Index$delConfirmed");
     }
 
@@ -107,6 +107,7 @@ public class Index extends CrudFormVm {
     }
 
     @Command
+    @Override
     public void browseClick() {
         Executions.createComponents("/template/component/browsedata.zul", null, null);
     }
@@ -199,4 +200,6 @@ public class Index extends CrudFormVm {
     public List<String> getGenderList() {
         return genderList;
     }
+       
+
 }

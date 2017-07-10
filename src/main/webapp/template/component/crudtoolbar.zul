@@ -7,7 +7,7 @@
                         class="btn btn-default" iconSclass="z-icon-plus"/>                                    
                 
         <button width="50px" height="40px" tooltiptext="Delete" 
-                        visible="@load(vm.visibleDelete)" onClick="@command('delClick')"
+                        visible="@load(vm.visibleDelete)" onClick="@command('deleteClick')"
                         class="btn btn-default" iconSclass="z-icon-trash-o"/>
             
         <button width="50px" height="40px"  tooltiptext="Save"            
