@@ -31,23 +31,28 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 * Used Hibernate [bidirectional association One-To-Many](https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch07.html) for Model.
 * Browse list data have search feature that used `onChanging` or `onKeyPress` like event.
 * Delete data have its popup confirmation.
-* Applied [Template Pattern](https://www.tutorialspoint.com/design_pattern/template_pattern.htm) into several generic class, in order to have more clean code & scalability application.
+* Applied [Template Pattern](https://www.tutorialspoint.com/design_pattern/template_pattern.htm) into several generic class, in order to have a more clean code & scalability application.
+* Used [Bootstrap3](http://getbootstrap.com/) (experimental) for some `zul` components.
 
 
 ## Install & Run the Application
-* Install [NetBeans IDE version 8.2](https://netbeans.org/downloads/), please ensure you also have installed its bundle __Apache Tomcat__ and activate __Maven__ feature. If you're advanced user, you're welcome to use any other IDE (_Eclipse, IntelliJ IDEA, etc_).
-* Off course, you need to clone this project into your local storage.
-* Unless, you have been working with `maven` and have all the libraries that state above in your local cache. You need a __really proper internet connection__ on first attemp, in order to download all the dependencies. You can run `Build with Dependencies` on NetBeans.
+* Install [NetBeans IDE version 8.2](https://netbeans.org/downloads/), please ensure you also have installed its bundle __Apache Tomcat__ and activate __Maven__ feature. If you're advanced user, feel free to use any other IDE (_Eclipse, IntelliJ IDEA, etc_).
+* Off course, you need to `git clone` this project into your local storage.
+* Unless, you have been working with `maven` and have all the libraries that state above in your local cache. You need a __reliable internet connection__ on first attemp, in order to download all the dependencies. You can run `Build with Dependencies` on NetBeans.
 * You dont need to install a database engine prior run the application. I used only a portable SQLite3 file, find it at this location: `/src/main/webapp/WEB-INF/classes/zkmvvmcrud8.db`. You can use any compatible Database Editor to directly connect to that file. And feel free to explor.
 * Usually, it has came with sample data. But If you would like, I also prepared the populate script for init data. Please find out at this classpath: `com.mkdika.zkmvvmcrud8.cli.PopulateInitData.class`. Just run this `driver class`.
 * Finally, you can simply run this sample application with NetBeans `run` options.
 
 
 ## Screenshots
-_comming soon_
+![Imgur](http://i.imgur.com/FMMmA4f.png)
+
+![Imgur](http://i.imgur.com/FpBF47V.png)
+
+![Imgur](http://i.imgur.com/EKPt4kz.png)
+
+![Imgur](http://i.imgur.com/ZEREKW6.png)
 
 
 ## Troubleshoot
-* Try to search with google and [stackOverFlow](https://stackoverflow.com/) first, most of you question supposed to be ask by others. 
-* And You are also feel free to [contact me](http://blog.mkdika.com/about/). I will feedback whenever I have time.
-
+* Try to search with google or [stackOverFlow](https://stackoverflow.com/) first, most of you questions supposed to be have been asked by others ;)
