@@ -3,8 +3,7 @@
 <zk xmlns="http://www.zkoss.org/2005/zul">        
     <window id="msqDialog"  minimizable="false" maximizable="false" closable="false" sizable="true"
             mode="modal" border="normal" width="360px" height="160px" style="padding: 3px 3px 3px 3px;"
-            shadow="false" position="center"
-            apply="org.zkoss.bind.BindComposer" 
+            shadow="false" position="center"           
             viewModel="@id('vm') @init('com.mkdika.zkmvvmcrud8.web.zk.component.MsqDialog')" >
         <caption id="caption" label="@load(vm.title)" iconSclass="z-icon-question-circle-o" style="vertical-align: middle;padding:10px 0px 0px 2p;font-weight: bold;font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif;color:#FFF;"/>
         <vbox align="center" width="100%">

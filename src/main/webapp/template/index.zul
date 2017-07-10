@@ -10,8 +10,7 @@
     xmlns:x="http://www.w3.org/1999/xhtml">  
                              
     <div class="box box-primary box-solid" id="windowmainb"              
-         width="100%" height="98%"
-         apply="org.zkoss.bind.BindComposer" 
+         width="100%" height="98%"         
          validationMessages="@id('vmsgs')" viewModel="@id('vm') @init('com.mkdika.zkmvvmcrud8.web.vm.Index',gridId='gridExp')" >
         <div class="box-header with-border">
             <x:h3 class="box-title">
