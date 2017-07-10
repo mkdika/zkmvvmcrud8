@@ -1,9 +1,12 @@
-# ZK MVVM CRUD 8
+## ZK MVVM CRUD 8
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
+[![codebeat badge](https://codebeat.co/badges/31c7c908-b731-4b36-b3a2-446fc095d2e5)](https://codebeat.co/projects/github-com-mkdika-zkmvvmcrud8-master)
+
 ZK Framework version 8 MVVM Pattern. CRUD Transaction Proof of Concept Sample Project.
 
 This is the improved version with alternative pattern from previously [ZK MVVM CRUD](https://github.com/mkdika/zkmvvmcrud) sample project.
 
-## Technologies
+### Technologies
 * __Java Platform:__
 	* [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html): JDK 8u121
 
@@ -24,7 +27,7 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 	* [NetBeans IDE 8.2](https://netbeans.org/)
 
 
-## Features
+### Features
 * Used [Spring Java Configuration](https://dzone.com/articles/spring-java-config-101-0) (alternative to Spring XML Config)
 * Used only (pure) ZK MVVM Style on CRUD transaction.
 * Used Hibernate Validator Framework as the implementation of Java Bean Validation [JSR-303](http://beanvalidation.org/1.0/spec/).
@@ -35,7 +38,7 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 * Used [Bootstrap3](http://getbootstrap.com/) (experimental) for some `zul` components.
 
 
-## Install & Run the Application
+### Install & Run the Application
 * Install [NetBeans IDE version 8.2](https://netbeans.org/downloads/), please ensure you also have installed its bundle __Apache Tomcat__ and activate __Maven__ feature. If you're advanced user, feel free to use any other IDE (_Eclipse, IntelliJ IDEA, etc_).
 * Off course, you need to `git clone` this project into your local storage.
 * Unless, you have been working with `maven` and have all the libraries that state above in your local cache. You need a __reliable internet connection__ on first attemp, in order to download all the dependencies. You can run `Build with Dependencies` on NetBeans.
@@ -44,7 +47,7 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 * Finally, you can simply run this sample application with NetBeans `run` options.
 
 
-## Screenshots
+### Screenshots
 ![Imgur](http://i.imgur.com/FMMmA4f.png)
 
 ![Imgur](http://i.imgur.com/FpBF47V.png)
@@ -54,5 +57,5 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 ![Imgur](http://i.imgur.com/ZEREKW6.png)
 
 
-## Troubleshoot
+### Troubleshoot
 * Try to search with google or [stackOverFlow](https://stackoverflow.com/) first, most of your questions supposed to be asked by others.
