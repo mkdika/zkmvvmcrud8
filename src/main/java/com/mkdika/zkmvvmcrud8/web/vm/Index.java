@@ -130,6 +130,7 @@ public class Index extends CrudFormVm {
     }
 
     @Command
+    @SmartNotifyChange({"experiences"})
     public void delExpItem(@BindingParam("data") TbExperience data) {
         int index = experiences.indexOf(data);
         if (index != -1) {
@@ -138,6 +139,7 @@ public class Index extends CrudFormVm {
     }
 
     @Command
+    @SmartNotifyChange({"experiences"})
     public void addExpItem() {
         TbExperience t = new TbExperience(getSelected());
         experiences.add(t);
@@ -199,7 +201,5 @@ public class Index extends CrudFormVm {
 
     public List<String> getGenderList() {
         return genderList;
-    }
-       
-
+    }       
 }

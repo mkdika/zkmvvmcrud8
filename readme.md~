@@ -47,6 +47,13 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 * Finally, you can simply run this sample application with NetBeans `run` options.
 
 
+<<<<<<< OURS
+### Online Demo
+For online demo please visit this [__Site__](https://zkmvvmcrud8.herokuapp.com/).
+
+
+=======
+>>>>>>> THEIRS
 ### Screenshots
 ![Imgur](http://i.imgur.com/FMMmA4f.png)
 
@@ -59,3 +66,10 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 
 ### Troubleshoot
 * Try to search with google or [stackOverFlow](https://stackoverflow.com/) first, most of your questions supposed to be asked by others.
+<<<<<<< OURS
+
+
+### References
+* [Deploying Tomcat-based Java Web Applications with Webapp Runner on Heroku](https://devcenter.heroku.com/articles/java-webapp-runner)
+=======
+>>>>>>> THEIRS

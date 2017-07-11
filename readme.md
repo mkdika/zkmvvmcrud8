@@ -43,7 +43,7 @@ This is the improved version with alternative pattern from previously [ZK MVVM C
 * Off course, you need to `git clone` this project into your local storage.
 * Unless, you have been working with `maven` and have all the libraries that state above in your local cache. You need a __reliable internet connection__ on first attemp, in order to download all the dependencies. You can run `Build with Dependencies` on NetBeans.
 * You dont need to install a database engine prior run the application. I used only a portable SQLite3 file, find it at this location: `/src/main/webapp/WEB-INF/classes/zkmvvmcrud8.db`. You can use any compatible Database Editor to directly connect to that file. And feel free to explor.
-* Usually, it has came with sample data. But If you would like, I also prepared the populate script for init data. Please find out at this classpath: `com.mkdika.zkmvvmcrud8.cli.PopulateInitData.class`. Just run this `driver class`.
+* Usually, it has came with sample data. But If you would like, I also prepared the populate script for init data. Please find out at this classpath: `com.mkdika.zkmvvmcrud8.cli.PopulateInitData`. Just run this `driver class`.
 * Finally, you can simply run this sample application with NetBeans `run` options.
 
 
