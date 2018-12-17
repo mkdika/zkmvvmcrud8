@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="Value Lookup" contentType="text/html;charset=UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">        
+    <window id="msqDialog"  minimizable="false" maximizable="false" closable="false" sizable="true"
+            mode="modal" border="normal" width="360px" height="160px" style="padding: 3px 3px 3px 3px;"
+            shadow="false" position="center"           
+            viewModel="@id('vm') @init('com.mkdika.zkmvvmcrud8.web.zk.component.MsqDialog')" >
+        <caption id="caption" label="@load(vm.title)" iconSclass="z-icon-question-circle-o" style="vertical-align: middle;padding:10px 0px 0px 2p;font-weight: bold;font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif;color:#FFF;"/>
+        <vbox align="center" width="100%">
+            <separator/>
+            <label id="content" value="@load(vm.content)" style="padding-right:5px ;color:#333333; font-size: 9pt; font-family: Verdana, Arial, Helvetica, sans-serif;"/>                            
+            <separator/>
+            <separator/>
+            <hbox align="center">                
+                <button class="form-control" id="btn1" label="YES" height="35px"
+                        width="100px" autodisable="self" onClick="@command('selectYes',window=msqDialog)" />    
+                <separator/>
+                <separator/>
+                <separator/>
+                <button class="form-control" id="btn2" label="NO" height="35px"
+                        width="100px" autodisable="self" onClick="@command('selectNo',window=msqDialog)" />    
+            </hbox>        
+        </vbox>        
+    </window>
+</zk>
